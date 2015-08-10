@@ -1,0 +1,68 @@
+
+
+#master_menu{
+    left:initial;
+    height:5rem;
+    background-color: white;
+}
+
+.dark_red{
+    color:#CC0000 !important;
+}
+
+.transition_red.item {
+    -o-transition: .3s !important;
+    -ms-transition: .3s !important;
+    -moz-transition: .3s !important;
+    -webkit-transition: .3s !important;
+    transition: .3s !important;
+}
+
+.transition_red.item:hover {
+    color: #ED786A !important;
+    border-color: #ED786A !important;
+}
+
+.lightred {
+    color: #ED786A !important;
+}
+
+.logo.header {
+    font-size: -webkit-xxx-large !important;
+    margin-top: 9rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.large_font {
+    font-size: 1.5rem;
+}
+
+.non-pointer.item {
+    cursor: default;
+}
+
+.double_divider {
+    height: 0.5rem;
+    width: 100%;
+    background-color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.double_divider_bg {
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+
+/* For Photo Gallary */
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
