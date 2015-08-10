@@ -8,6 +8,10 @@ p, a, label {
 
 /* Semantic Element */
 
+.ribbon.label{
+    font-size: 15px;
+}
+
 .large.divider{
     height:5rem;
 }
