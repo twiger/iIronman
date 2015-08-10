@@ -15,7 +15,7 @@ $(document)
     });
 
 function init_master() {
-    $('#master_menu').css("cssText", "width:" + $("#logo_master").width() + "px !important;");
+    //$('#master_menu').css("cssText", "width:" + $("#logo_master").width() + "px !important;");
     $("#owl-demo").owlCarousel({
 
         autoPlay: 3000, //Set AutoPlay to 3 seconds
