@@ -9,6 +9,18 @@ $(document)
 
         });
 
+        var pos = 0;
+        var scroll_bool = true;
+        $(window).scroll(function() {
+            var current_pos = $(this).scrollTop();
+            if (current_pos > pos && scroll_bool) {
+                //Scroll Down
+                $('html, body').animate({
+                    scrollTop: $("#main_content").offset().top - 50
+                }, 1000);
+                scroll_bool = false;
+            }
+        });
 
 
 
@@ -23,7 +35,7 @@ function init_master() {
         itemsDesktop: [1199, 3],
         itemsDesktopSmall: [979, 3],
         rewindSpeed: 0,
-        pagination:false
+        pagination: false
 
     });
 }

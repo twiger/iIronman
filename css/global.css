@@ -1,9 +1,15 @@
+/* Global */
+
+p, a, label {
+    font-size: 15px;
+    line-height:25px !important;
+}
 
 
-#master_menu{
-    //left:initial;
-    height:4rem;
-    background-color: white;
+/* Semantic Element */
+
+.large.divider{
+    height:5rem;
 }
 
 .dark_red{
@@ -16,6 +22,7 @@
     -moz-transition: .3s !important;
     -webkit-transition: .3s !important;
     transition: .3s !important;
+    color:black;
 }
 
 .transition_red.item:hover {
@@ -25,16 +32,6 @@
 
 .lightred {
     color: #ED786A !important;
-}
-
-.logo.header {
-    font-size: -webkit-xxx-large !important;
-    margin-top: 9rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.large_font {
-    font-size: 1.5rem;
 }
 
 .non-pointer.item {
@@ -65,4 +62,22 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* For master */
+#master_menu{
+    //left:initial;
+    height:4rem;
+    background-color: white;
+}
+
+
+.logo.header {
+    font-size: -webkit-xxx-large !important;
+    margin-top: 9rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.large_font {
+    font-size: 1.5rem;
 }
