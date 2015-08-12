@@ -11,19 +11,24 @@ $(document)
 
         });
 
+
+        $('.home.item').click(function() {
+            $("#main_content").load("home.html", function(responseTxt, statusTxt, xhr) {
+                init_master();
+                $("#master_menu > .item").removeClass("active");
+                $('.home.item').addClass("active");
+                $('#info_content').css("display","none");
+                $('#info_content').fadeIn(1000);
+
+            });
+        });
+
         $('.about.item').click(function() {
             $("#main_content").load("competition_news.html", function(responseTxt, statusTxt, xhr) {
                 $("#master_menu > .item").removeClass("active");
                 $('.about.item').addClass("active");
                 $('#info_content').css("display","none");
                 $('#info_content').fadeIn(1000);
-            });
-        });
-
-        $('.home.item').click(function() {
-            $("#main_content").load("home.html", function(responseTxt, statusTxt, xhr) {
-                init_master();
-
             });
         });
 
