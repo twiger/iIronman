@@ -1,0 +1,108 @@
+/* Global */
+
+body{
+    min-width: 1024px;
+}
+
+p, a, label, span{
+    font-size: 15px;
+    line-height:25px !important;
+}
+
+
+
+/* Semantic Element */
+
+.ribbon.label{
+    font-size: 15px;
+}
+
+.large.divider{
+    height:5rem;
+}
+
+.dark_red{
+    color:#CC0000 !important;
+}
+
+.transition_red.item {
+    -o-transition: .3s !important;
+    -ms-transition: .3s !important;
+    -moz-transition: .3s !important;
+    -webkit-transition: .3s !important;
+    transition: .3s !important;
+    color:black;
+}
+
+.transition_red.item:hover {
+    color: #ED786A !important;
+    border-color: #ED786A !important;
+}
+
+.lightred {
+    color: #ED786A !important;
+}
+
+.non-pointer.item {
+    cursor: default;
+}
+
+.double_divider {
+    height: 0.5rem;
+    width: 100%;
+    background-color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.double_divider_bg {
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+
+/* For Photo Gallary */
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* For master */
+#master_menu{
+    //left:initial;
+    height:4rem;
+    background-color: white;
+}
+
+
+.logo.home.header {
+    font-size: -webkit-xxx-large !important;
+    margin-top: 9rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.logo.article.header{
+    font-size: -webkit-xxx-large !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+
+.large_font {
+    font-size: 1.5rem;
+}
+
+.text.menu.aligned_logo{
+    margin-bottom: -0.5rem;
+}
+
+/* For Footer */
+#footer > .black.row{
+    padding:2rem;
+}
