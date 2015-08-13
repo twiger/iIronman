@@ -98,6 +98,10 @@ p, a, label, span{
     font-size: 1.5rem;
 }
 
+.medium_font{
+    font-size: 1.2rem;
+}
+
 .text.menu.aligned_logo{
     margin-bottom: -0.5rem;
 }
