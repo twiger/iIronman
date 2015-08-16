@@ -6,83 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <script language="JavaScript" type="text/javascript" src="dist/jquery-2.1.4.js"></script>
-    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
-    <script src="dist/semantic.min.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css">
+    <script src="dist/semantic/semantic.min.js"></script>
+    <script src="js/global.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="dist/owl.carousel.css">
     <link rel="stylesheet" href="dist/owl.theme.css">
     <script src="dist/owl.carousel.js"></script>
-    <div id="master">
-    </div>
+    <script>
+    $(document)
+        .ready(function() {
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
+                $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
+                    init_master();
+                    $("#master_menu > .item").removeClass("active");
+                    $('.home.item').addClass("active");
+                    $('#info_content').css("display", "none");
+                    $('#info_content').fadeIn(1000);
+
+                });
+            });
+
+        })
+    </script>
 </head>
 
-<body >
-    <div id="segment_master">
-        <div class="ui stackable centered page grid">
-            <div class="ui hidden divider"></div>
-            <div class="bottom aligned row">
-                <div class="sixteen wide column">
-                    <div id="master_menu" class="ui fluid seven item secondary pointing fixed menu">
-                        <a class="transition_red item home">
-                        HOME & News
-                        </a>
-                        <a class="transition_red item about">
-                        競賽介紹
-                        </a>
-                        <a class="transition_red item rules">
-                        競賽規則
-                        </a>
-                        <a class="transition_red item enrollment">
-                        報名資訊
-                        </a>
-                        <a class="transition_red item">
-                        下載專區
-                        </a>
-                        <a class="transition_red item">
-                        培訓計畫
-                        </a>
-                        <a class="transition_red item">
-                        友站連結
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="ui hidden divider"></div>
-            
-        </div>
+<body>
+    <div id="master">
     </div>
     <div id="main_content">
-        
-    </div>
-    <div id="footer" class="ui inverted very relaxed grid">
-        <div class="ui hidden divider"></div>
-        <div class="stretched black three column row">
-            <div class="column">
-                <div class="ui padded inverted segment">
-                    <label>主辦單位 : </label>
-                    <p>教育部、教育部青年發展署</p>
-                    <label>執行單位 : </label>
-                    <p>國立台灣大學、國立台東大學</p>
-                    <label>其他協辦單位 : </label>
-                    <p>台灣大學科學教育發展中心、優仕網</p>
+        <div id="info_content" class="ui stackable centered page grid">
+            <div class="ui hidden divider">
+            </div>
+            <div id="logo_master" class="row">
+                <h1 class="ui center aligned lightred logo home header">
+        2016 智慧鐵人創意競賽
+        </h1>
+            </div>
+            <div class="row">
+                <h2 class="ui center aligned grey header">
+        Intelligent Ironman Creativity Contest
+        </h2>
+            </div>
+            <div class="centered row">
+                <div class="ui text menu">
+                    <a class="transition_red item">
+                        <span class="large_font">ENGLISH</span>
+                    </a>
+                    <a class="non-pointer item">│</a>
+                    <a class="transition_red item">
+                        <span class="large_font">進入報名網站</span>
+                    </a>
+                    <a class="non-pointer item">│</a>
+                    <a class="transition_red item">
+                        <span class="large_font">即時新聞</span>
+                    </a>
+                    <a class="non-pointer item">│</a>
+                    <a class="transition_red item">
+                        <span class="large_font">網站架構</span>
+                    </a>
+                    <a class="non-pointer item">│</a>
+                    <a class="transition_red item">
+                        <span class="large_font">留言版</span>
+                    </a>
                 </div>
             </div>
-            <div class="column">
-                <div class="ui padded inverted segment">
-                    <label>協辦學校 : </label>
-                    <p>國立台灣大學、國立政治大學、中華科技大學、台北市立大學、健行科技大學、修平科技大學、建國科技大學、崑山科技大學、正修科技大學、國立高雄第一科技大學、國立宜蘭大學、國立東華大學、國立金門大學</p>
+            <div class="row">
+                <div id="owl-demo">
+                    <div class="item"><img src="img/photo_scroll/1.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/2.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/3.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/4.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/5.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/6.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/7.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/8.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/9.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/10.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/11.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/12.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/13.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/14.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/15.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/16.jpg" alt="Owl Image"></div>
+                    <div class="item"><img src="img/photo_scroll/17.jpg" alt="Owl Image"></div>
                 </div>
             </div>
-            <div class="column">
-                <div class="ui padded inverted segment">
-                    <p>智慧鐵人創意辦公室</p>
-                    <label>地址 :</label>
-                    <p>10617 台北市羅斯福四段一號
-                        <br/>國立台灣大學水工試驗所</p>
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="footer">
     </div>
 </body>
 

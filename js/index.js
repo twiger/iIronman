@@ -1,3 +1,4 @@
+
 $(document)
     .ready(function() {
         init_master();
@@ -25,7 +26,6 @@ $(document)
                 $('.home.item').addClass("active");
                 $('#info_content').css("display", "none");
                 $('#info_content').fadeIn(1000);
-
             });
         });
 
@@ -33,6 +33,7 @@ $(document)
             $("#main_content").load("competition_news.html", function(responseTxt, statusTxt, xhr) {
                 $("#master_menu > .item").removeClass("active");
                 $('.about.item').addClass("active");
+                $('.1-1').addClass("active");
                 $('#info_content').css("display", "none");
                 $('#info_content').fadeIn(1000);
             });
@@ -42,6 +43,7 @@ $(document)
             $("#main_content").load("enrollment.html", function(responseTxt, statusTxt, xhr) {
                 $("#master_menu > .item").removeClass("active");
                 $('.enrollment.item').addClass("active");
+                $('.1-1').addClass("active");
                 $('#info_content').css("display", "none");
                 $('#info_content').fadeIn(1000);
             });
