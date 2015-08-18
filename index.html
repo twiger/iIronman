@@ -21,6 +21,16 @@
                 cache: false
             });
 
+            /* Laoding Animation */
+            $(window).load(function() {
+                // Animate loader off screen
+                setTimeout(
+                    function() {
+                        //do something specials
+                        $(".se-pre-con").fadeOut("slow");
+                    }, 2000);
+            });
+
             $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
                     init_master();
@@ -37,6 +47,7 @@
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <div id="master">
     </div>
     <div id="main_content">
