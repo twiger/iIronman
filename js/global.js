@@ -1,3 +1,5 @@
+var display_content = getURLParameter('content');
+
 function init_master() {
     //$('#master_menu').css("cssText", "width:" + $("#logo_master").width() + "px !important;");
     $("#owl-demo").owlCarousel({
@@ -59,3 +61,43 @@ function enable_scroll() {
     }
     window.onmousewheel = document.onmousewheel = document.onkeydown = null;
 }
+
+
+// For change url not refresh
+
+$(function() {
+    $("a[rel='tab']").click(function(e) {
+        //code for the link action
+        return false;
+    });
+});
+
+$(function() {
+    $("a[rel='tab']").click(function(e) {
+        //e.preventDefault();
+        /*
+        if uncomment the above line, html5 nonsupported browers won't change the url but will display the ajax content;
+        if commented, html5 nonsupported browers will reload the page to the specified link.
+        */
+
+        //get the link location that was clicked
+        pageurl = $(this).attr('href');
+
+        //to change the browser URL to the given link location
+        if (pageurl != window.location) {
+            window.history.pushState({
+                path: pageurl
+            }, '', pageurl);
+        }
+
+        //to refresh 'info_content'
+        display_content = getURLParameter('content');
+        $('.left_list').removeClass("active");
+        $('.display_content').removeClass("active");
+        $('.' + display_content).addClass("active");
+        console.log(display_content);
+
+        //stop refreshing to the page given in
+        return false;
+    });
+});

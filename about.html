@@ -25,10 +25,9 @@
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
                     $("#master_menu > .item").removeClass("active");
                     $('.about.item').addClass("active");
-                    $('.1-1').addClass("active");
+                    $('.' + display_content).addClass("active");
                     $('#info_content').css("display", "none");
                     $('#info_content').fadeIn(1000);
-
                 });
             });
 
@@ -91,16 +90,19 @@
             <div id="info_content" class="stretched row">
                 <div class="four wide column">
                     <div class="ui raised segment">
-                        <div class="ui red ribbon label">關於競賽</div>
+                        <div class="ui red ribbon label">競賽歷史</div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 1-1">競賽介紹</a></div>
+                                <div class="content"><a href="about.html?content=1-1" rel="tab" class="transition_red item left_list 1-1">緣起</a></div>
                             </div>
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 1-2">競賽理念</a></div>
+                                <div class="content"><a href="about.html?content=1-2" rel="tab" class="transition_red item left_list 1-2">競賽介紹</a></div>
                             </div>
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 1-3">大事記</a></div>
+                                <div class="content"><a href="about.html?content=1-3" rel="tab" class="transition_red item left_list 1-3">競賽理念</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=1-4" rel="tab" class="transition_red item left_list 1-4">大事紀</a></div>
                             </div>
                         </div>
                         <div class="ui divider"></div>
@@ -108,61 +110,304 @@
                         </div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-1">時間與場地</a></div>
+                                <div class="content"><a href="about.html?content=2-1" rel="tab" class="transition_red item left_list 2-1">工作團隊</a></div>
                             </div>
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-2">大會獎項</a></div>
+                                <div class="content"><a href="about.html?content=2-2" rel="tab" class="transition_red item left_list 2-2">出題委員</a></div>
                             </div>
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-3">複賽-企業獎</a></div>
+                                <div class="content"><a href="about.html?content=2-3" rel="tab" class="transition_red item left_list 2-3">協辦單位</a></div>
                             </div>
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-4">決賽-企業獎</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-5">第一梯晉級名單</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-6">第二梯晉級名單</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-7">工作團隊</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-8">出題委員</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 2-9">協辦單位</a></div>
+                                <div class="content"><a href="about.html?content=2-4" rel="tab" class="transition_red item left_list 2-4">贊助單位</a></div>
                             </div>
                         </div>
-                        <div class="ui divider"></div>
-                        <div class="ui green ribbon label">歷屆資訊</div>
-                        <div class="ui list">
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 3-10">網站</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item 3-11">題目</a></div>
-                            </div>
-                        </div>
-                        <div class="ui hidden divider"></div>
+                        <div class="ui hidden large divider"></div>
                     </div>
                 </div>
                 <div class="twelve wide column">
                     <div class="ui raised very padded segment">
-                        <h2 class="ui dividing header">競賽介紹</h2>
-                        <div class="ui hidden divider"></div>
-                        <h4 class="ui dark_red header">
-                       <i class="dark_red angle double right icon"></i>緣起
-                    </h4>
-                        <p>教育部於2001年正式頒佈《創造力教育白皮書》(White Paper on Creative Education)，並於2004年2月13日到15日推出「第一屆創造力教育博覽會」，向全國宣傳創意的概念和創造力教育的資源。為了打響博覽會名聲，有了連續比三天「鐵人賽」的構想。</p>
-                        <p>當時教育部顧問室邀請臺大土木系劉格非教授接下此任務，並將比賽命名為「智慧鐵人創意競賽」，以彰顯智慧、體力與創意三要素。第一屆智慧鐵人創意競賽因此而生。</p>
-                        <p>在獲得廣大迴響後，教育部決定於同年八月舉辦第二屆比賽，往後每年辦理一屆。2005年(第三屆)開始辦理國際邀請賽，台灣高中職學生的創造力正式邁向國際舞台。2007年第五屆暨第三屆國際邀請賽，高中與高職組首次分組頒獎，參賽國也橫跨歐亞洲，各國爭相在該國內舉辦初賽選拔選手；而校園也開始成立智鐵研習社團與討論區，從第一屆600餘人參賽，成長為超過萬人的國際型競賽，顯示創意思考透過比賽，已開始有了扎根的成效。</p>
-                        <div class="ui hidden divider"></div>
-                        <h4 class="ui dark_red header">
-                       <i class="dark_red angle double right icon"></i>競賽內容 -- 包羅萬象、不可存檔的電腦遊戲
-                    </h4>
-                        <p>「智慧鐵人創意競賽」就像一場真人冒險遊戲。參賽者必須集結不同專長的隊友組隊，破解每道不同領域的關卡，更必須挑戰、製作前所未見的作品，舉凡日常所觸及的人文、科技、體育、實作或生活中的勞務等知識與技能，都是競賽的考驗項目。</p>
+                        <div class="display_content 1-1">
+                            <h2 class="ui dividing header">緣起</h2>
+                            <div class="ui hidden divider"></div>
+                            <p>教育部於2001年正式頒佈創造力教育白皮書 ( White Paper on Creative Education)並於2004年2月13日到15日推出持續三天的「第一屆創造力教育博覽會」，向全國宣傳創意的概念和創造力教育的資源。當時負責博覽會宣傳與執行的中山大學陳以亨教授，為了打響創造力教育博覽會的名聲，而有了連續比三天「鐵人賽」的構想。</p>
+                            <p>當時教育部顧問室邀請台大土木系劉格非教授接下此任務，經過第一次原則性的討論，決定將比賽命名為「智慧鐵人創意競賽」，以彰顯智慧、體力與創意3要素，並把整個活動的架構和組織，交給劉格非教授設計。自此，第一屆智慧鐵人創意競賽4個月嘗試與摸索的冒險之路於焉展開。</p>
+                            <p>第1屆比賽獲得高中生與學校的廣大迴響後，教育部決定於同年8月舉辦第2屆比賽，往後每年辦理1屆。2005年(第3屆)辦理第1屆國際邀請賽，台灣高中職學生的創造力正式邁向國際舞台。2007年第5屆暨第3屆國際邀請賽，高中與高職首次分組頒獎，參賽國也橫跨歐亞洲，各國爭相在該國內舉辦初賽選拔選手；同時高中校園也有了智慧鐵人創意競賽研習社團，網路上也有智慧鐵人創意競賽家族與許多的討論區成立。</p>
+                            <p>智慧鐵人創意競賽從第1屆600餘人參賽，成長為超過萬人的國際型競賽，創意思考透過比賽，似乎已有了紮根的成效。</p>
+                        </div>
+                        <div class="display_content 1-2">
+                            <h2 class="ui dividing header">競賽介紹</h2>
+                            <div class="ui hidden divider"></div>
+                            <p>「智慧鐵人創意競賽」就像一場真人冒險遊戲。參賽者必須集結不同專長的隊友組隊，破解每道不同領域的關卡，更必須挑戰、製作前所未見的作品，舉凡日常所觸及的人文、科技、體育、實作或生活中的勞務等知識與技能，都是競賽的考驗項目。</p>
+                            <p>競賽的賽程共分初賽、複賽、決賽。
+                                <br/> 當你一路殺敵斬將來到決賽，迎接你的將是最艱鉅的任務！
+                            </p>
+                            <p>決賽為連續72小時不間斷競賽，在這72小時中，共有27道關卡以及「主軸任務」迎接著隊伍的到來！
+                                <br/>關卡平均分為自然、人文、體其3大類，隊伍必須妥善規劃時間、了解隊伍戰力及各隊員的長處，發揮團隊默契去破解關卡，而這所有的努力都是為了最終目標—主軸任務！</p>
+                            <p>「主軸任務」才是真正決勝負的關鍵！
+                                <br/> 面對「主軸任務」的考驗，你與同伴必須完成一項從未見過的作品，而這一切一切—卻必須從零開始！
+                                <br/> 藉由闖關所獲得的虛擬幣，到遊戲所架設的商店中購買實品材料，經過設計、動手製作以及不斷的修改、測試到完成。在這過程中，你將體會從無到有的滿足感。而親手嘗試、設計，將腦中的點子化為實體作品的你，將驚訝於自己原來也擁有這麼多的巧思與妙計，而平日所學竟是如此實用而有趣！更不用說那些與同伴們一起努力、歡笑、共同解決困境的種種經歷，更是彌足珍貴。
+                            </p>
+                            <p>愛玩遊戲的你，一定要來！因為這場真人實境的冒險保證讓你大呼驚奇；不玩遊戲的你更是要來體驗，在這裡你將驚艷自己潛藏的創意！快來寫下一段屬於自己青春熱血的冒險故事吧！在這裡，還能跟各國代表隊一較高下，更不用說還有教育部的獎狀及優渥的獎學金在等著你呢！</p>
+                        </div>
+                        <div class="display_content 1-3">
+                            <h2 class="ui dividing header">競賽理念</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>競賽介紹
+                            </h4>
+                            <p>智慧鐵人創意競賽強調人文與科技並重，創造力與實作能力齊步，將多元知識融合，經過冒險情境的塑造，讓學生在競賽中挑戰自我、創新學習，而闖關及主軸任務的製作更訓練參賽者領導統馭、時效管理以及情緒控制等學校無法學習的能力。</p>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>參賽者自我體會
+                            </h4>
+                            <p>臺灣教育，在升學競爭下，側重於考試訓練，卻疏忽實作能力的養成與情緒管理。近年新興議題如翻轉教室、趣味教學、未來力，以及最新強調的團隊力，都是智慧鐵人創意競賽從13年來就重視的教育重點。</p>
+                            <p>智慧鐵人創意競賽強調人文與科技並重，創造力與實踐齊步，結合多元知識與學科，打造新奇、有趣的關卡。透過冒險情境的塑造，學生在競賽中活用所學、挑戰自我並學習創新，藉由闖關活動與主軸製作，更訓練學子們領導統馭、時效管理與團隊合作等學校中難以傳授的重要能力。</p>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>培養成功者的特質
+                            </h4>
+                            <p>台灣是個缺少天然資源的地方，30年後，臺灣想依舊在世界的舞台上閃耀，絕不可能靠現在的產業，而必須靠現在的學生成長後所創造出來的產業。但要創造一個產業，有許多必要的條件，那麼哪些條件是未來人才所需要的呢？</p>
+                            <p>體力，尤其是耐力。很多事只要能抵達終點就會是贏家，再聰明的人，未能抵達最後一步，還是輸家。
+                                <br/> 膽識與創造力，沒有膽識與創造力，就不敢嘗試，也無法創造新東西。
+                                <br/> 活用知識，在嘗試過程中，必須要能活用所學，因為新的事物往往無法以舊思維去操作、思考，如果無法活用知識，就無法操作新事物。
+                                <br/> 最後，也是最重要的，是團隊。一個成功的商品，不管是科技產品或藝文作品，沒有包裝、行銷、量產、財務與行整管理團隊，絕對無法創造新的企業，因此懂得團隊合作、擁有領導統御能力的人，才有可能是未來的贏家。
+                            </p>
+                            <p>智慧鐵人創意競賽就是把以上說的體力、膽識、智慧與團隊等要素，以有趣的遊戲競賽方式，讓學生邊學邊玩，進而改造自我。</p>
+                        </div>
+                        <div class="display_content 1-4">
+                            <h2 class="ui header">大事紀</h2>
+                            <div class="ui hidden divider"></div>
+                            <table class="ui very basic table">
+                                <thead>
+                                    <tr>
+                                        <th class="two wide">時間</th>
+                                        <th class="four wide">屆</th>
+                                        <th class="six wide">參與國家</th>
+                                        <th class="four wide">大事紀</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2004 年
+                                            <br/> 2 月</td>
+                                        <td>第一屆</td>
+                                        <td><i class="tw flag"></i>臺灣</td>
+                                        <td>邀請台北學校參與</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2004 年
+                                            <br/> 7 月</td>
+                                        <td>第二屆</td>
+                                        <td><i class="tw flag"></i>臺灣</td>
+                                        <td>賽事擴展至全國賽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2005 年</td>
+                                        <td>第三屆
+                                            <br/>第一屆國際賽
+                                        </td>
+                                        <td><i class="tw flag"></i>臺灣&nbsp;&nbsp;<i class="my flag"></i>馬來西亞&nbsp;&nbsp;<i class="jp flag"></i>日本&nbsp;&nbsp;</td>
+                                        <td>第一屆國際賽
+                                            <br/>台灣學生的創造力首次躍上國際舞台
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2006 年</td>
+                                        <td>第四屆
+                                            <br/>第二屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <i class="sg flag"></i>新加坡&nbsp;&nbsp;
+                                            <i class="hk flag"></i>香港&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="th flag"></i>泰國&nbsp;&nbsp;
+                                        </td>
+                                        <td>德國隊的加入
+                                            <br/>智慧鐵人創意競賽延伸至歐亞版圖
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2007 年</td>
+                                        <td>第五屆
+                                            <br/>第三屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                            <i class="hk flag"></i>香港&nbsp;&nbsp;
+                                            <i class="sg flag"></i>新加坡&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="fr flag"></i>法國&nbsp;&nbsp;
+                                        </td>
+                                        <td>首屆高中/高職 分組競賽
+                                            <br/>日本、新加坡、韓國、德國各在該國內辦理初賽選拔參賽選手
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2008 年</td>
+                                        <td>第六屆
+                                            <br/>第四屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <i class="sg flag"></i>新加坡&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                        </td>
+                                        <td>因參賽人數增加，初賽分兩梯次舉行，並舉辦首屆複賽
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2009 年</td>
+                                        <td>第七屆
+                                            <br/>第五屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="sg flag"></i>新加坡&nbsp;&nbsp;
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                        </td>
+                                        <td>智慧鐵人創意競賽電子報發行
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2010 年</td>
+                                        <td>第八屆
+                                            <br/>第六屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="se flag"></i>瑞典&nbsp;&nbsp;
+                                            <i class="ca flag"></i>加拿大&nbsp;&nbsp;
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="sg flag"></i>新加坡&nbsp;&nbsp;
+                                        </td>
+                                        <td>新增金門與台東賽場，賽事擴展至離島
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2011 年</td>
+                                        <td>第九屆
+                                            <br/>第七屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="il flag"></i>以色列&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="ca flag"></i>加拿大&nbsp;&nbsp;
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="hk flag"></i>香港&nbsp;&nbsp;
+                                        </td>
+                                        <td>列為技專校院甄審之加分採記項目
+                                            <br/> 凡獲得前三名隊伍，得加分總分之 20 %
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2012 年</td>
+                                        <td>第十屆
+                                            <br/>第八屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <i class="at flag"></i>奧地利&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <i class="hk flag"></i>香港&nbsp;&nbsp;
+                                        </td>
+                                        <td>五專 1 ~ 3 年級學生併入高職五專組參賽
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2013 年</td>
+                                        <td>第十一屆
+                                            <br/>第九屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <i class="be flag"></i>比利時&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <i class="hk flag"></i>香港&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="sg flag"></i>新加坡&nbsp;&nbsp;
+                                        </td>
+                                        <td>離到地區併入東區<br/>
+                                            成為東部與離島地區
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2014 年</td>
+                                        <td>第十二屆
+                                            <br/>第十屆國際賽
+                                        </td>
+                                        <td>
+                                            <i class="tw flag"></i>臺灣&nbsp;&nbsp;
+                                            <i class="de flag"></i>德國&nbsp;&nbsp;
+                                            <i class="at flag"></i>奧地利&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="jp flag"></i>日本&nbsp;&nbsp;
+                                            <i class="kr flag"></i>韓國&nbsp;&nbsp;
+                                            <i class="hk flag"></i>香港&nbsp;&nbsp;
+                                            <br/>
+                                            <i class="sg flag"></i>新加坡&nbsp;&nbsp;
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="display_content 2-1">
+                            <h2 class="ui dividing header">工作團隊</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 2-2">
+                            <h2 class="ui dividing header">出題委員</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 2-3">
+                            <h2 class="ui dividing header">協辦單位</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 2-4">
+                            <h2 class="ui dividing header">贊助單位</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
                         <div class="ui hidden large divider"></div>
                     </div>
                 </div>
