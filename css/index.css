@@ -106,6 +106,10 @@ span {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.ui.ordered.list>.item{
+    margin-bottom: 1rem;
+}
+
 
 /* For Photo Gallary */
 
