@@ -34,12 +34,11 @@
             $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
                     $("#master_menu > .item").removeClass("active");
-                    $('.enrollment.item').addClass("active");
+                    $('.information.item').addClass("active");
                     $('.left_list.'+display_content).addClass("active");
                     $('.' + display_content).fadeIn();
                     $('#info_content').css("display", "none");
                     $('#info_content').fadeIn(1000);
-
                 });
             });
 
@@ -103,40 +102,61 @@
             <div id="info_content" class="stretched row">
                 <div class="four wide column">
                     <div class="ui raised segment">
-                        <div class="ui red ribbon label">報名資訊</div>
+                        <div class="ui red ribbon label">組隊辦法</div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a href="enrollment.html?content=1-1" rel="tab" class="transition_red item left_list 1-1">辦法與繳費</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item left_list 1-2">報名流程</a></div>
-                            </div>
-                            <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a href="enrollment.html?content=1-3" rel="tab" class="transition_red item left_list 1-3">注意事項</a></div>
+                                <div class="content"><a href="about.html?content=1-1" rel="tab" class="transition_red item left_list 1-1">組隊辦法</a></div>
                             </div>
                         </div>
                         <div class="ui divider"></div>
-                        <div class="ui blue ribbon label">報名網站</a>
+                        <div class="ui blue ribbon label">時間與場地</a>
                         </div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item left_list 2-1">點我進入</a></div>
+                                <div class="content"><a href="about.html?content=2-1" rel="tab" class="transition_red item left_list 2-1">初賽</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=2-2" rel="tab" class="transition_red item left_list 2-2">複賽</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=2-3" rel="tab" class="transition_red item left_list 2-3">決賽</a></div>
                             </div>
                         </div>
                         <div class="ui divider"></div>
-                        <div class="ui green ribbon label">Q & A</div>
+                        <div class="ui green ribbon label">獎項</a>
+                        </div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item left_list 2-2">常見問題</a></div>
+                                <div class="content"><a href="about.html?content=2-1" rel="tab" class="transition_red item left_list 2-1">大會獎項</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=2-2" rel="tab" class="transition_red item left_list 2-2">複賽企業獎</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=2-3" rel="tab" class="transition_red item left_list 2-3">決賽企業獎</a></div>
                             </div>
                         </div>
-                        <div class="ui hidden divider"></div>
+                        <div class="ui divider"></div>
+                        <div class="ui teal ribbon label">晉級名單</a>
+                        </div>
+                        <div class="ui list">
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=2-1" rel="tab" class="transition_red item left_list 2-1">第一梯初賽晉級名單</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=2-2" rel="tab" class="transition_red item left_list 2-2">第二梯初賽晉級名單</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="about.html?content=2-3" rel="tab" class="transition_red item left_list 2-3">複賽晉級名單</a></div>
+                            </div>
+                        </div>
+                        <div class="ui hidden large divider"></div>
                     </div>
                 </div>
                 <div class="twelve wide column">
                     <div class="ui raised very padded segment">
                         <div class="display_content 1-1">
-                            <h2 class="ui dividing header">辦法與繳費</h2>
+                            <h2 class="ui dividing header">組隊辦法</h2>
                             <div class="ui hidden divider"></div>
                             <h4 class="ui dark_red header">
                                 <i class="dark_red angle double right icon"></i>參賽資格
@@ -146,12 +166,14 @@
                             <h4 class="ui dark_red header">
                                 <i class="dark_red angle double right icon"></i>報名時間
                             </h4>
-                            <p>第一梯次：2014年12月15日12:00至2015年2月4日17:00止。
-                                <br/>(截止時間前報名成功,即可馬上選場地 )
-                                <br/>補件截止時間為2月26日17:00止，補件後選場：2月28日8:00至3月2日20:00</p>
-                            <p>第二梯次：2015年3月30日12:00至4月29日止17:00止。
+                            <p>第一梯次：2015年12月X日12:00至2016年X月X日17:00止。
                                 <br/> (截止時間前報名成功,即可馬上選場地 )
-                                <br/> 補件截止時間為5月6日17:00止，補件後選場：5月9日8:00至10日12:00
+                                <br/> 補件截止時間為2月X日17:00止，補件後選場：2月X日8:00至X月X日20:00
+                                <br/>
+                            </p>
+                            <p>第二梯次：2016年X月X日12:00至X月X日止17:00止。
+                                <br/> (截止時間前報名成功,即可馬上選場地 )
+                                <br/> 補件截止時間為5月X日17:00止，補件後選場：5月X日8:00至X日12:00
                             </p>
                             <div class="ui hidden divider"></div>
                             <h4 class="ui dark_red header">
@@ -168,77 +190,40 @@
                                 <i class="dark_red angle double right icon"></i>分區
                             </h4>
                             <p>參賽隊伍請依學校所在地為參賽地區，不得越區報名。如人數相同，則可跨區。
-                                <br/> 北區: 基隆、台北、桃園、新竹。
+                            </p>
+                            <p>北區: 基隆、台北、桃園、新竹。
                                 <br/> 中區: 苗栗、台中、彰化、南投、雲林。
                                 <br/> 南區: 嘉義、台南、高雄、屏東。
                                 <br/> 東部與離島地區: 宜蘭、花蓮、台東、馬祖、澎湖、金門。
                             </p>
-                            <div class="ui hidden divider"></div>
-                            <h4 class="ui dark_red header">
-                                <i class="dark_red angle double right icon"></i>報名費繳交與退費說明
-                            </h4>
-                            <div class="ui ordered list">
-                                <div class="item">
-                                    <span>每隊報名費新台幣1000元整</span>
-                                </div>
-                                <div class="item">
-                                    <span>繳費帳戶資訊
-                                    <br/>銀行：華南銀行台大分行(銀行代碼：008)
-                                    <br/>戶名：台灣智慧鐵人創意競賽協會，帳號：154100006557
-                                    </span>
-                                </div>
-                                <div class="item">
-                                    <span>清寒學生需附里長以上行政單位開立具效力之清寒證明，並將此證明連同報名資料寄至執行單位審核。每位清寒隊員可減免報名費新台幣250元，減免至0元止。</span>
-                                </div>
-                                <div class="item">
-                                    <span>報名成功隊伍，如想棄賽，須於該梯補件截止日(第一梯2月26日17:00,第二梯5月6日17:00)以前將棄賽聲明書、退費申請書寄出，違者恕不受理退費。</span>
-                                </div>
-                                <div class="item">
-                                    <span>退費手續費：非華南銀行帳戶，執行單位將酌收手續費新台幣30元整。</span>
-                                </div>
-                            </div>
-                            <div class="ui hidden divider"></div>
-                            <h4 class="ui dark_red header">
-                                <i class="dark_red angle double right icon"></i>清寒學生參賽交通費補助 (今年新增)
-                            </h4>
-                            <div class="ui ordered list">
-                                <div class="item">
-                                    <span>清寒學生參賽,可以補助長途旅費如火車(本島),部分機票(離島)。</span>
-                                </div>
-                                <div class="item">
-                                    <span>補助辦法近日將會公布</span>
-                                </div>
-                            </div>
                         </div>
-                        <div class="display_content 1-3">
-                            <h2 class="ui dividing header">注意事項</h2>
+                        <div class="display_content 2-1">
+                            <h2 class="ui dividing header">工作團隊</h2>
                             <div class="ui hidden divider"></div>
                             <h4 class="ui dark_red header">
-                                <i class="dark_red angle double right icon"></i>列表
+                                <i class="dark_red angle double right icon"></i>尚未公布
                             </h4>
-                            <div class="ui ordered list">
-                                <div class="item">
-                                    <span>題目除了包括國文、史地，自然科學，美工等，更重實作、創意、體能與其他各種技能，鼓勵不同專長成員共組隊伍。</span>
-                                </div>
-                                <div class="item">
-                                    <span>該梯次補件截止且報名成功隊伍，任何時候都不得再更換隊員，也不得申請退費。</span>
-                                </div>
-                                <div class="item">
-                                    <span>報名相關文件限以郵寄方式寄達，其他方式(如：傳真、電郵、親送等)恕不受理。</span>
-                                </div>
-                                <div class="item">
-                                    <span>文件寄送不強制掛號，但如以平信寄送，由於無法查詢投遞紀錄與進度，如影響報名權益，恕不負責。</span>
-                                </div>
-                                <div class="item">
-                                    <span>依教育部規定，指導老師需為現任全國高級中等學校員額內教師(包含現職代理教師、兼課教師以及實習教師)，否則將影響報名權利，指導老師服務單位請確實填寫清楚。</span>
-                                </div>
-                                <div class="item">
-                                    <span>參賽隊員，報到時核發參賽證明乙份。遺失須補發者請參考第7點說明。</span>
-                                </div>
-                                <div class="item">
-                                    <span>欲補發參賽證明、繳費證明或獎狀者，請附上信封一只及50元郵票寄至執行單位，經審核，隊伍確實符合申請資格，將以此寄回補發文件。未按規定者，不予補發。</span>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="display_content 2-2">
+                            <h2 class="ui dividing header">出題委員</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 2-3">
+                            <h2 class="ui dividing header">協辦單位</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 2-4">
+                            <h2 class="ui dividing header">贊助單位</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
                         </div>
                         <div class="ui hidden large divider"></div>
                     </div>

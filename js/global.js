@@ -93,8 +93,9 @@ $(function() {
         //to refresh 'info_content'
         display_content = getURLParameter('content');
         $('.left_list').removeClass("active");
-        $('.display_content').removeClass("active");
-        $('.' + display_content).addClass("active");
+        $('.left_list.' + display_content).addClass("active");
+        $('.display_content').css("display","none");
+        $('.' + display_content).fadeIn();
         console.log(display_content);
 
         //stop refreshing to the page given in

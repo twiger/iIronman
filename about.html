@@ -35,7 +35,8 @@
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
                     $("#master_menu > .item").removeClass("active");
                     $('.about.item').addClass("active");
-                    $('.' + display_content).addClass("active");
+                    $('.left_list.'+display_content).addClass("active");
+                    $('.' + display_content).fadeIn();
                     $('#info_content').css("display", "none");
                     $('#info_content').fadeIn(1000);
                 });
