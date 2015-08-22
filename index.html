@@ -42,6 +42,16 @@
                 });
             });
 
+            $(window).scroll(function() {
+                scrollToTarget("news_list");
+            });
+
+            $(".news_list.scrollTo").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#news_list").offset().top - 50
+                }, 1000)
+            });
+
         })
     </script>
 </head>
@@ -75,7 +85,7 @@
                     </a>
                     <a class="non-pointer item">│</a>
                     <a class="transition_red item">
-                        <span class="large_font">即時新聞</span>
+                        <span class="news_list scrollTo large_font">最新消息</span>
                     </a>
                     <a class="non-pointer item">│</a>
                     <a class="transition_red item">
@@ -107,6 +117,34 @@
                     <div class="item"><img src="img/photo_scroll/16.jpg" alt="Owl Image"></div>
                     <div class="item"><img src="img/photo_scroll/17.jpg" alt="Owl Image"></div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ui hidden divider"></div>
+            </div>
+            <div class="row">
+                <div id="news_list" class="ui raised segment">
+                    <div class="ui hidden divider"></div>
+                    <h1 class="ui header">
+                        <i class=""></i>
+                        <div class="content">
+                           最新消息
+                            <div class="sub header">Please keep track of our website.</div>
+                        </div>
+                    </h1>
+                    <div class="ui hidden divider"></div>
+                    <div class="double_divider_bg">
+                        <div class="double_divider"></div>
+                    </div>
+                    <iframe src="news/news.html" width="100%" height="1000px" frameborder="0" scrolling="yes"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ui hidden divider"></div>
             </div>
             <div class="row">
                 <div class="double_divider_bg">

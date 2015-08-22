@@ -94,7 +94,7 @@ $(function() {
         display_content = getURLParameter('content');
         $('.left_list').removeClass("active");
         $('.left_list.' + display_content).addClass("active");
-        $('.display_content').css("display","none");
+        $('.display_content').css("display", "none");
         $('.' + display_content).fadeIn();
         console.log(display_content);
 
@@ -102,3 +102,38 @@ $(function() {
         return false;
     });
 });
+
+// For Slide window
+
+var pos = 0;
+var scroll_bool = true;
+
+function scrollToTarget(target) {
+    console.log(pos);
+    var current_pos = $(this).scrollTop();
+    if (current_pos > pos && scroll_bool) {
+        //Scroll Down
+        disable_scroll();
+        $('html, body').animate({
+            scrollTop: $("#" + target).offset().top - 50
+        }, 1000, function() {
+            enable_scroll();
+        });
+        scroll_bool = false;
+    }
+}
+
+
+// For Timeline View
+
+function hideBlocks(blocks, offset) {
+    blocks.each(function() {
+        ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+    });
+}
+
+function showBlocks(blocks, offset) {
+    blocks.each(function() {
+        ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.cd-timeline-img').hasClass('is-hidden')) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+    });
+}

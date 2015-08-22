@@ -55,6 +55,11 @@ span {
 }
 /* Semantic Element */
 
+#news_list{
+    width:100%;
+
+}
+
 .transition_red.item.active {
     font-weight: 800;
 }
@@ -110,6 +115,10 @@ span {
     margin-bottom: 1rem;
 }
 
+.question{
+    color: firebrick;
+}
+
 
 /* For Photo Gallary */
 
@@ -122,6 +131,7 @@ span {
     width: 100%;
     height: auto;
 }
+
 /* For master */
 
 #master_menu {
@@ -132,7 +142,7 @@ span {
 
 .logo.home.header {
     font-size: -webkit-xxx-large !important;
-    margin-top: 9rem !important;
+    margin-top: 6rem !important;
     margin-bottom: 1rem !important;
 }
 

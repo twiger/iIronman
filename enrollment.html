@@ -35,7 +35,7 @@
                 $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
                     $("#master_menu > .item").removeClass("active");
                     $('.enrollment.item').addClass("active");
-                    $('.left_list.'+display_content).addClass("active");
+                    $('.left_list.' + display_content).addClass("active");
                     $('.' + display_content).fadeIn();
                     $('#info_content').css("display", "none");
                     $('#info_content').fadeIn(1000);
@@ -70,11 +70,11 @@
                     <div class="ui text menu aligned_logo">
                         <div class="right menu">
                             <a class="transition_red item">
-                                <span class="medium_font">ENGLISH</span>
+                                <span class="medium_font">進入報名網站</span>
                             </a>
                             <a class="non-pointer item">│</a>
                             <a class="transition_red item">
-                                <span class="medium_font">進入報名網站</span>
+                                <span class="medium_font">留言板</span>
                             </a>
                         </div>
                     </div>
@@ -85,11 +85,11 @@
                             </a>
                             <a class="non-pointer item">│</a>
                             <a class="transition_red item">
-                                <span class="medium_font">網站架構</span>
+                                <span class="medium_font">媒體報導</span>
                             </a>
                             <a class="non-pointer item">│</a>
                             <a class="transition_red item">
-                                <span class="medium_font">留言版</span>
+                                <span class="medium_font">網站架構</span>
                             </a>
                         </div>
                     </div>
@@ -106,10 +106,10 @@
                         <div class="ui red ribbon label">報名資訊</div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a href="enrollment.html?content=1-1" rel="tab" class="transition_red item left_list 1-1">辦法與繳費</a></div>
+                                <div class="content"><a href="enrollment.html?content=1-1" rel="tab" class="transition_red item left_list 1-1">報名流程</a></div>
                             </div>
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item left_list 1-2">報名流程</a></div>
+                                <div class="content"><a href="enrollment.html?content=1-2" rel="tab" class="transition_red item left_list 1-2">辦法與繳費</a></div>
                             </div>
                             <div class="item"><i class="right triangle icon"></i>
                                 <div class="content"><a href="enrollment.html?content=1-3" rel="tab" class="transition_red item left_list 1-3">注意事項</a></div>
@@ -120,14 +120,14 @@
                         </div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item left_list 2-1">點我進入</a></div>
+                                <div class="content"><a target="_blank" href="http://ironman.youthwant.com.tw/apply/tutorial.php" class="transition_red item left_list 2-1">點我進入</a></div>
                             </div>
                         </div>
                         <div class="ui divider"></div>
                         <div class="ui green ribbon label">Q & A</div>
                         <div class="ui list">
                             <div class="item"><i class="right triangle icon"></i>
-                                <div class="content"><a class="transition_red item left_list 2-2">常見問題</a></div>
+                                <div class="content"><a href="enrollment.html?content=3-1" rel="tab" class="transition_red item left_list 3-1">常見問題</a></div>
                             </div>
                         </div>
                         <div class="ui hidden divider"></div>
@@ -136,6 +136,55 @@
                 <div class="twelve wide column">
                     <div class="ui raised very padded segment">
                         <div class="display_content 1-1">
+                            <h2 class="ui dividing header">報名流程</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 1-2">
+                            <h2 class="ui dividing header">繳費資訊</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>報名費繳交與退費說明
+                            </h4>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui ordered list">
+                                <div class="item">
+                                    <span>每隊報名費新台幣1000元整</span>
+                                </div>
+                                <div class="item">
+                                    <span>繳費帳戶資訊<br/>
+                                        銀行：華南銀行台大分行(銀行代碼：008)<br/>
+                                        戶名：台灣智慧鐵人創意競賽協會，帳號：154100006557
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <span>清寒學生需附里長以上行政單位開立具效力之清寒證明，並將此證明連同報名資料寄至執行單位審核。每位清寒隊員可減免報名費新台幣250元，減免至0元止。</span>
+                                </div>
+                                <div class="item">
+                                    <span>報名成功隊伍，如想棄賽，須於該梯補件截止日(第一梯X月XX日17:00,第二梯X月X日17:00)以前將棄賽聲明書、退費申請書寄出，違者恕不受理退費。</span>
+                                </div>
+                                <div class="item">
+                                    <span>退費手續費：非華南銀行帳戶，執行單位將酌收手續費新台幣30元整。</span>
+                                </div>
+                            </div>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                    <i class="dark_red angle double right icon"></i>清寒學生參賽交通費補助 (今年新增)
+                                </h4>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui ordered list">
+                                <div class="item">
+                                    <span>清寒學生參賽,可以補助長途旅費如火車(本島),部分機票(離島)。</span>
+                                </div>
+                                <div class="item">
+                                    <span>補助辦法近日將會公布。</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="display_content 1-2">
                             <h2 class="ui dividing header">辦法與繳費</h2>
                             <div class="ui hidden divider"></div>
                             <h4 class="ui dark_red header">
@@ -210,12 +259,10 @@
                                 </div>
                             </div>
                         </div>
+                    -->
                         <div class="display_content 1-3">
                             <h2 class="ui dividing header">注意事項</h2>
                             <div class="ui hidden divider"></div>
-                            <h4 class="ui dark_red header">
-                                <i class="dark_red angle double right icon"></i>列表
-                            </h4>
                             <div class="ui ordered list">
                                 <div class="item">
                                     <span>題目除了包括國文、史地，自然科學，美工等，更重實作、創意、體能與其他各種技能，鼓勵不同專長成員共組隊伍。</span>
@@ -237,6 +284,36 @@
                                 </div>
                                 <div class="item">
                                     <span>欲補發參賽證明、繳費證明或獎狀者，請附上信封一只及50元郵票寄至執行單位，經審核，隊伍確實符合申請資格，將以此寄回補發文件。未按規定者，不予補發。</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display_content 3-1">
+                            <h2 class="ui dividing header">常見問題</h2>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui ordered list">
+                                <div class="item">
+                                    <span class="question">學生證不見了，用身分證代替可以嗎？<br/></span>
+                                    <span class="answer">由於參賽資格必須為在學學生，請由學校開立在學證明替代。</span>
+                                </div>
+                                <div class="item">
+                                    <span class="question">為什麼需要指導老師？指導老師需要前往嗎？<br/></span>
+                                    <span class="answer">指導老師為大會與隊伍間的連絡橋樑，依教育部規定，指導老師需為現任全國高級中等學校員額內教師(包含現職代理教師、兼課教師以及實習教師)。比賽時，指導老師只能在休息區休息，不能指導隊伍，因此指導老師不一定要到比賽場地。</span>
+                                </div>
+                                <div class="item">
+                                    <span class="question">初賽第一梯沒晉級，再報名第二梯的報名費與資料填寫問題?<br/></span>
+                                    <span class="answer">第二次報名，系統可以抓第一次的資料，但文件請附上104學年下學期註冊章，而報名費為競賽成本，因此還是要再繳交一次報名費。</span>
+                                </div>
+                                <div class="item">
+                                    <span class="question">競賽與其他活動撞期或想向學校申請補助，該如何申請證明？<br/></span>
+                                    <span class="answer">請下載「證明參賽_公文申請書」。填寫完畢後，連同回郵信封(請貼足郵資並填寫收件資訊)將申請書寄至執行單位(106 台北市羅斯福路四段一號 臺大水工試驗所 智慧鐵人創意競賽收)。若郵寄資料不全(如：未附回郵信封、資料填寫不全)將不予受理，收到申請書後，至少需要2~3天的工作天才能將公文寄出，請同學留意申請時間!</span>
+                                </div>
+                                <div class="item">
+                                    <span class="question">比賽當天有開放出去購買便當嗎?需要訂指導老師的便當嗎?<br/></span>
+                                    <span class="answer">比賽中午休息時間開放自由行動，可出去購買便當，但需注意場地近郊是否可以買到便當。場地資訊可於「競賽資訊>時間與場地」中看到，由於指導老師並不強迫要陪同到場，請依此作為訂便當的考量。</span>
+                                </div>
+                                <div class="item">
+                                    <span class="question">如何退費?<br/></span>
+                                    <span class="answer">請下載退費申請書並於各梯補件日截止以前寄出申請書，逾期恕不受理。一梯隊伍如要將報名費轉於二梯參賽用，則免辦理退費申請。所有退費作業統一於第二梯次初賽結束(X/X)後處裡。</span>
                                 </div>
                             </div>
                         </div>
