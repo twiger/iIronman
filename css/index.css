@@ -132,6 +132,11 @@ span {
     height: auto;
 }
 
+/* Override Semantic UI Element */
+.ui.ordered.list .list>.item:before, .ui.ordered.list>.item:before, ol.ui.list li:before{
+    margin-top:0.32rem;
+}
+
 /* For master */
 
 #master_menu {
