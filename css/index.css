@@ -73,6 +73,7 @@ span {
 
 span.news.time{
     color:darkgrey;
+    float:right;
 }
 
 h4.ui.news.dark_red.header{
