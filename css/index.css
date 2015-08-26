@@ -53,11 +53,31 @@ span {
 .inverted.segment > p > a:hover {
     color: #c6c4c4;
 }
+
 /* Semantic Element */
 
-#news_list{
-    width:100%;
+.ui.raised.very.padded.home.segment{
+    max-height: 800px;
+    overflow: auto;
+}
 
+.ui.news.image{
+    width:38%;
+}
+
+.news.description{
+    overflow:hidden;
+    height:9rem;
+
+}
+
+span.news.time{
+    color:darkgrey;
+}
+
+h4.ui.news.dark_red.header{
+    margin-top:0.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .transition_red.item.active {

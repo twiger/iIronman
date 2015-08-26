@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script language="JavaScript" type="text/javascript" src="dist/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css">
+    <script src="dist/semantic/semantic.min.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="dist/owl.carousel.css">
+    <link rel="stylesheet" href="dist/owl.theme.css">
+    <script src="dist/owl.carousel.js"></script>
+    <script>
+    $(document)
+        .ready(function() {
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            /* Laoding Animation */
+            $(window).load(function() {
+                // Animate loader off screen
+                setTimeout(
+                    function() {
+                        //do something specials
+                        $(".se-pre-con").fadeOut("slow");
+                    }, 1000);
+            });
+
+            $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
+                $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
+                    $("#master_menu > .item").removeClass("active");
+                    $('.related_activity.item').addClass("active");
+                    $('.left_list.' + display_content).addClass("active");
+                    $('.' + display_content).fadeIn();
+                    $('#info_content').css("display", "none");
+                    $('#info_content').fadeIn(1000);
+                });
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+    <div id="master">
+    </div>
+    <div id="main_content">
+        <div id="competition_news" class="ui page grid">
+            <div class="bottom aligned row">
+                <div class="ten wide column">
+                    <div id="logo_master" class="row">
+                        <h1 class="ui left aligned lightred logo article header">
+                        2016 智慧鐵人創意競賽
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h2 class="ui left aligned grey header">
+                        Intelligent Ironman Creativity Contest
+                        </h2>
+                    </div>
+                </div>
+                <div class="six wide right aligned column">
+                    <div class="ui text menu aligned_logo">
+                        <div class="right menu">
+                            <a href="http://ironman.youthwant.com.tw/apply/tutorial.php" class="transition_red item">
+                                <span class="medium_font">進入報名網站</span>
+                            </a>
+                            <a class="non-pointer item">│</a>
+                            <a href="http://ibbs.youthwant.com.tw/iicc8/gb/" class="transition_red item">
+                                <span class="medium_font">留言版</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui text menu aligned_logo">
+                        <div class="right menu">
+                            <a href="http://ironman.nccu.edu.tw/" class="transition_red item">
+                                <span class="medium_font">即時新聞</span>
+                            </a>
+                            <a class="non-pointer item">│</a>
+                            <a class="transition_red item">
+                                <span class="medium_font">媒體報導</span>
+                            </a>
+                            <a class="non-pointer item">│</a>
+                            <a class="transition_red item">
+                                <span class="medium_font">網站架構</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
+                </div>
+            </div>
+            <div id="info_content" class="stretched row">
+                <div class="four wide column">
+                    <div class="ui raised segment">
+                        <div class="ui red ribbon label">培訓計畫</div>
+                        <div class="ui list">
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="related_activity.html?content=1-1" rel="tab" class="transition_red item left_list 1-1">教師研習營</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="related_activity.html?content=1-2" rel="tab" class="transition_red item left_list 1-2">學校推廣說明會</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="related_activity.html?content=1-3" rel="tab" class="transition_red item left_list 1-3">官方說明會</a></div>
+                            </div>
+                        </div>
+                        <div class="ui hidden large divider"></div>
+                    </div>
+                </div>
+                <div class="twelve wide column">
+                    <div class="ui raised very padded segment">
+                        <div class="display_content 1-1">
+                            <h2 class="ui dividing header">教師研習營</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>教師研習營申請
+                            </h4>
+                            <p>您好，我們將在全國辦12場以上的教師研習，如有需要我們協助貴單位辦理這類
+                                <br/>教師研習營，歡迎與智慧鐵人創意競賽辦公室聯繫，謝謝您。
+                                <br/> 詢問電話：(02)3366-2635
+                                <br/> 請將「教師研習申請表格 (下載) 」 填好後，寄至 ironmanoffice@gmail.com</p>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>目前教師研習營場次如下：
+                            </h4>
+                            <p>105年度智慧鐵人創意競賽與培訓計畫
+                                <br/> 尚未公布
+                            </p>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>參加對象
+                            </h4>
+                            <p>高中(含完全中學國中部及高中附設國小部) /高職/國中/國小/特殊教育學校教師</p>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>報名方式
+                            </h4>
+                            <div class="ui ordered list">
+                                <div class="item">
+                                    <span>請上「教育部全國教師在職進修資訊網」：<a href="http://www3.inservice.edu.tw/">http://www3.inservice.edu.tw/</a></span>
+                                </div>
+                                <div class="item">
+                                    <span>在「依縣市研習課程進入資訊網」中，點選想參與教師研習之縣市</span>
+                                </div>
+                                <div class="item">
+                                    <span>輸入課程代碼或用手機掃瞄QRcode，進入「105年度智慧鐵人創意競賽與培訓計畫-(研習名稱)」頁面，報名即可。 </span>
+                                </div>
+                            </div>
+                            <p>如有任何疑問請與智慧鐵人創意競賽辦公室聯絡。 </p>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>參加人數
+                            </h4>
+                            <p>因受場地限制，人數至多50名，以報名先後排定優先順序。
+                            </p>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>費用
+                            </h4>
+                            <p>本活動無收費。
+                            </p>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>今年度已辦理教師研習營的場次如下：
+                            </h4>
+                            <p>尚無內容
+                            </p>
+                            <div class="ui hidden large divider"></div>
+                        </div>
+                        <div class="display_content 1-2">
+                            <h2 class="ui dividing header">學校推廣說明會</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>學校推廣說明會申請
+                            </h4>
+                            <p>您好，我們將在全國辦12場以上的推廣說明會，如有需要我們協助貴單位辦理這類推廣說明會，歡迎與智慧鐵人創意競賽辦公室聯繫，謝謝您。
+                                <br/> 詢問電話：(02)3366-2635
+                                <br/> 請將「說明會申請表格 (下載) 」填好後，寄至ironmanoffice@gmail.com
+                            </p>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>目前學校推廣說明會場次如下：
+                            </h4>
+                            <p>尚未公布</p>
+                            <div class="ui hidden large divider"></div>
+                        </div>
+                        <div class="display_content 1-3">
+                            <h2 class="ui dividing header">官方說明會</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                            <p>註：北區每隊上限2人，中區與南區不限人數。
+                                <br/> 註：說明會時程如下。
+                                <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80分鐘 比賽簡介
+                                <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40分鐘 親身體驗活動
+                                <br/> 註：說明會可跨區選擇。
+                                <br/> 註：開放時間：即日起至說明會開始前，皆可進入報名網站登入帳號，點選「說明會資訊」即可報名，但請儘早報名以免來不及準備說明會相關資料。
+                            </p>
+                            <div class="ui hidden large divider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="double_divider_bg">
+                        <div class="double_divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+</body>
+
+</html>
