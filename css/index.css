@@ -71,6 +71,10 @@ span {
 
 }
 
+.extra > a > .ui.label{
+    float:right;
+}
+
 span.news.time{
     color:darkgrey;
     float:right;
