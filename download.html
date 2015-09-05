@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script language="JavaScript" type="text/javascript" src="dist/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic/semantic.min.css">
+    <script src="dist/semantic/semantic.min.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="dist/owl.carousel.css">
+    <link rel="stylesheet" href="dist/owl.theme.css">
+    <script src="dist/owl.carousel.js"></script>
+    <script>
+    $(document)
+        .ready(function() {
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            /* Laoding Animation */
+            $(window).load(function() {
+                // Animate loader off screen
+                setTimeout(
+                    function() {
+                        //do something specials
+                        $(".se-pre-con").fadeOut("slow");
+                    }, 1000);
+            });
+
+            $("#master").load("master.html", function(responseTxt, statusTxt, xhr) {
+                $("#footer").load("footer.html", function(responseTxt, statusTxt, xhr) {
+                    $("#master_menu > .item").removeClass("active");
+                    $('.download.item').addClass("active");
+                    $('.left_list.' + display_content).addClass("active");
+                    $('.' + display_content).fadeIn();
+                    $('#info_content').css("display", "none");
+                    $('#info_content').fadeIn(1000);
+                });
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+    <div id="master">
+    </div>
+    <div id="main_content">
+        <div id="competition_news" class="ui page grid">
+            <div class="bottom aligned row">
+                <div class="ten wide column">
+                    <div id="logo_master" class="row">
+                        <h1 class="ui left aligned lightred logo article header">
+            2016 智慧鐵人創意競賽
+            </h1>
+                    </div>
+                    <div class="row">
+                        <h2 class="ui left aligned grey header">
+            Intelligent Ironman Creativity Contest
+            </h2>
+                    </div>
+                </div>
+                <div class="six wide right aligned column">
+                    <div class="ui text menu aligned_logo">
+                        <div class="right menu">
+                            <a href="http://ironman.youthwant.com.tw/apply/tutorial.php" class="transition_red item">
+                                <span class="medium_font">進入報名網站</span>
+                            </a>
+                            <a class="non-pointer item">│</a>
+                            <a href="http://ibbs.youthwant.com.tw/iicc8/gb/" class="transition_red item">
+                                <span class="medium_font">留言版</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui text menu aligned_logo">
+                        <div class="right menu">
+                            <a href="http://ironman.nccu.edu.tw/" class="transition_red item">
+                                <span class="medium_font">即時新聞</span>
+                            </a>
+                            <a class="non-pointer item">│</a>
+                            <a class="transition_red item">
+                                <span class="medium_font">媒體報導</span>
+                            </a>
+                            <a class="non-pointer item">│</a>
+                            <a class="transition_red item">
+                                <span class="medium_font">網站架構</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
+                </div>
+            </div>
+            <div id="info_content" class="stretched row">
+                <div class="four wide column">
+                    <div class="ui raised segment">
+                        <div class="ui red ribbon label">本屆題目</div>
+                        <div class="ui list">
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=1-1" rel="tab" class="transition_red item left_list 1-1">初賽</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=1-2" rel="tab" class="transition_red item left_list 1-2">複賽</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=1-3" rel="tab" class="transition_red item left_list 1-3">決賽</a></div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <div class="ui blue ribbon label">常用表格</a>
+                        </div>
+                        <div class="ui list">
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=2-1" rel="tab" class="transition_red item left_list 2-1">常用表格</a></div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <div class="ui green ribbon label">照片與影片</a>
+                        </div>
+                        <div class="ui list">
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=3-1" rel="tab" class="transition_red item left_list 3-1">第一梯初賽照片</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=3-2" rel="tab" class="transition_red item left_list 3-2">第二梯初賽照片</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=3-3" rel="tab" class="transition_red item left_list 3-3">複賽</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=3-4" rel="tab" class="transition_red item left_list 3-4">決賽</a></div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <div class="ui teal ribbon label">其他</a>
+                        </div>
+                        <div class="ui list">
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=4-1" rel="tab" class="transition_red item left_list 4-1">文宣品</a></div>
+                            </div>
+                            <div class="item"><i class="right triangle icon"></i>
+                                <div class="content"><a href="download.html?content=4-2" rel="tab" class="transition_red item left_list 4-2">電子報</a></div>
+                            </div>
+                        </div>
+                        <div class="ui hidden large divider"></div>
+                    </div>
+                </div>
+                <div class="twelve wide column">
+                    <div class="ui raised very padded segment">
+                        <div class="display_content 1-1">
+                            <h2 class="ui dividing header">初賽</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 1-2">
+                            <h2 class="ui dividing header">複賽</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 1-3">
+                            <h2 class="ui dividing header">決賽</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 2-1">
+                            <h2 class="ui header">常用表格</h2>
+                            <div class="ui divider"></div>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui ordered list">
+                                <div class="item">
+                                    <span><a href="download/2015官方說明會PPT.pdf">2016官方說明會PPT</a></span>
+                                </div>
+                                <div class="item">
+                                    <span><a href="download/家長請假證明書.pdf">家長請假證明書</a></span>
+                                </div>
+                                <div class="item">
+                                    <span><a href="download/參賽證明_公文申請書.pdf">參賽證明_公文申請書</a></span>
+                                </div>
+                                <div class="item">
+                                    <span><a href="download/退費申請書.pdf">退費申請書</a></span>
+                                </div>
+                                <div class="item">
+                                    <span><a href="download/棄賽聲明書.pdf">棄賽聲明書</a></span>
+                                </div>
+                                <div class="ui hidden divider"></div>
+                                <div class="item">
+                                    <span><a href="download/複賽報到資料.docx">複賽報到資料</a></span>
+                                </div>
+                                <div class="item">
+                                    <span><a href="download/複決賽交通資訊.pdf">複決賽交通資訊</a></span>
+                                </div>
+                                <div class="item">
+                                    <span><a href="download/複決賽交通方式問卷.docx">複決賽交通方式問卷</a></span>
+                                </div>
+                                <div class="item">
+                                    <span><a href="download/複決賽手冊編輯資料繳交說明.doc">複決賽手冊編輯資料繳交說明</a></span>
+                                </div>
+                                <div class="ui hidden divider"></div>
+                                <div class="item">
+                                    <span><a href="download/教師研習營與說明會申請表格.docx"> 教師研習營與說明會申請表格</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display_content 3-1">
+                            <h2 class="ui dividing header">第一梯初賽照片</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 3-2">
+                            <h2 class="ui dividing header">第二梯初賽照片</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 3-3">
+                            <h2 class="ui dividing header">複賽</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 3-4">
+                            <h2 class="ui dividing header">決賽</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 4-1">
+                            <h2 class="ui dividing header">文宣品</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>尚未公布
+                            </h4>
+                        </div>
+                        <div class="display_content 4-2">
+                            <h2 class="ui dividing header">電子報</h2>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>本屆電子報
+                            </h4>
+                            <div class="ui basic segment">
+                                <ul class="ui large list">
+                                    <li>第十四屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a>
+                                                
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a>
+                                                
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a>
+                                                
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a>
+                                                
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ui hidden divider"></div>
+                            <h4 class="ui dark_red header">
+                                <i class="dark_red angle double right icon"></i>歷屆電子報
+                            </h4>
+                            <div class="ui basic segment">
+                                <ul class="ui large list">
+                                    <li>第十三屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/13thepaper/1/index.html">
+                                                第一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/13thepaper/2/index.html">
+                                                第二期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/13thepaper/3/index.html">
+                                                第三期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/13thepaper/4/IRONMAN.html">
+                                                第四期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/13thepaper/5/IRONMAN.html">
+                                                第五期
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <br/>
+                                    <li>第十二屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/12thepaper/1/index.html">
+                                                第一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/12thepaper/2/index.html">
+                                                第二期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/12thepaper/3/index.html">
+                                                第三期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/12thepaper/4/index.html">
+                                                第四期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/12thepaper/5/index.html">
+                                                第五期
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <br/>
+                                    <li>第十一屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/11thepaper/1/index.html">
+                                                第一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/11thepaper/2/index.html">
+                                                第二期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/11thepaper/3/index.html">
+                                                第三期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/11thepaper/4/index.html">
+                                                第四期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/11thepaper/5/index.html">
+                                                第五期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/11thepaper/6/index.html">
+                                                第六期
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <br/>
+                                    <li>第十屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/10thepaper/1/index.html">
+                                                第一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/10thepaper/2/index.html">
+                                                第二期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/10thepaper/3/index.html">
+                                                第三期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/10thepaper/4/index.html">
+                                                第四期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/10thepaper/5/index.html">
+                                                第五期
+                                            </a>
+                                            </div>
+                                            <br/>
+                                            <div class="no_left_margin item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/10thepaper/6/index.html">
+                                                第六期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/10thepaper/7/index.html">
+                                                第七期
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <br/>
+                                    <li>第九屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/9thepaper/1/ironman9th.html">
+                                                第一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/9thepaper/2/ironman2th.html">
+                                                第二期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/9thepaper/3/ironman9th3.html">
+                                                第三期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/9thepaper/4/ironman9th3.html">
+                                                第四期
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <br/>
+                                    <li>第八屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/epaper/1/ironman1.html">
+                                                第一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/epaper/2/ironman2.html">
+                                                第二期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/epaper/3/ironman3.html">
+                                                第三期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/download.work/epaper/4/ironman4.html">
+                                                第四期
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <br/>
+                                    <li>第七屆
+                                        <br/>
+                                        <div class="ui horizontal list">
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/1/epaper.html">
+                                                第一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/2/2.html">
+                                                第二期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/3/3.html">
+                                                第三期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/4/4.html">
+                                                第四期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/5/5.html">
+                                                第五期
+                                            </a>
+                                            </div>
+                                            <br/>
+                                            <div class="no_left_margin item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/6/iron7.html">
+                                                第六期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/7/iron7.html">
+                                                第七期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/iron8/iron8.html">
+                                                第八期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/iron9/iron9.html">
+                                                第九期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/iron10/iron10.html">
+                                                第十期
+                                            </a>
+                                            </div>
+                                            <br/>
+                                            <div class="no_left_margin item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/iron11/iron11.html">
+                                                第十一期
+                                            </a>
+                                            </div>
+                                            <div class="margin_left_small item">
+                                                <a href="http://ironman.creativity.edu.tw/7th/images/epaper/iron12/iron12.html">
+                                                第十二期
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ui hidden large divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="double_divider_bg">
+                    <div class="double_divider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+</html>

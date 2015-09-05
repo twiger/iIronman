@@ -56,6 +56,23 @@ span {
 
 /* Semantic Element */
 
+.margin_left.item{
+    margin-left: 3rem !important;
+}
+
+.margin_left_small{
+    margin-left: 2rem !important;
+}
+
+.no_left_margin{
+    margin-left: 0rem !important;
+}
+
+.ui .horizontal.list > .item > a{
+    color:dimgrey;
+    text-decoration:underline;
+}
+
 .ui.raised.very.padded.home.segment{
     max-height: 800px;
     overflow: auto;
