@@ -56,6 +56,13 @@ span {
 
 /* Semantic Element */
 
+.external_iframe{
+    -webkit-transform:scale(0.9);
+    -moz-transform-scale(0.9);
+    margin-left:-60px;
+    margin-top: -60px;
+}
+
 .margin_left.item{
     margin-left: 3rem !important;
 }
@@ -68,7 +75,7 @@ span {
     margin-left: 0rem !important;
 }
 
-.ui .horizontal.list > .item > a{
+.ui .horizontal.list > .item > a, .ui .bulleted.history.list > .item > span > a{
     color:dimgrey;
     text-decoration:underline;
 }
@@ -153,7 +160,7 @@ h4.ui.news.dark_red.header{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.ui.ordered.list>.item{
+.ui.ordered.list>.item, .ui.bulleted.list>.item{
     margin-bottom: 1rem;
 }
 
@@ -176,6 +183,10 @@ h4.ui.news.dark_red.header{
 
 /* Override Semantic UI Element */
 .ui.ordered.list .list>.item:before, .ui.ordered.list>.item:before, ol.ui.list li:before{
+    margin-top:0.32rem;
+}
+
+.ui.bulleted.list .list>.item:before, .ui.bulleted.list>.item:before{
     margin-top:0.32rem;
 }
 
