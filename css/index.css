@@ -181,6 +181,11 @@ h4.ui.news.dark_red.header{
     height: auto;
 }
 
+table.ui.person.black.table{
+    width:96%;
+    margin-left: 1rem;
+}
+
 /* Override Semantic UI Element */
 .ui.ordered.list .list>.item:before, .ui.ordered.list>.item:before, ol.ui.list li:before{
     margin-top:0.32rem;
