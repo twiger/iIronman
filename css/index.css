@@ -55,6 +55,10 @@ span {
 }
 
 /* Semantic Element */
+.school_url{
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
 
 .external_iframe{
     -webkit-transform:scale(0.9);
