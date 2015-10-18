@@ -38,6 +38,10 @@ span {
     line-height: 25px !important;
 }
 
+p.float.right{
+    float:right;
+}
+
 .display_content {
     display: none;
 }
