@@ -59,6 +59,79 @@ p.float.right{
 }
 
 /* Semantic Element */
+
+.course.column{
+    margin-top: -0.5rem !important;
+}
+
+.ui.hidden.course.divider{
+    margin:0.87rem;
+}
+
+.ui.course.label{
+    margin-right:4.2rem;
+    top:-0.8rem;
+    margin-bottom:-1rem;
+}
+
+.ui.course_ad.label{
+    margin-right:4.2rem;
+    top:-1.4rem;
+    margin-bottom:-1rem;
+}
+
+.ui.grid>.three_round_ad.column, .ui.grid>.three_round_ad.row, .ui.grid>.row>.three_round_ad.column{
+    background-color:#6ad1cb;
+}
+
+.ui.grid>.three_round.column, .ui.grid>.three_round.row, .ui.grid>.row>.three_round.column{
+    background-color:#6bc6c2;
+}
+
+.ui.grid>.three_round.head.column, .ui.grid>.three_round.head.row, .ui.grid>.row>.three_round.head.column{
+    background-color:#5dbab5!important;
+}
+
+.ui.grid>.second_round.column, .ui.grid>.second_round.row, .ui.grid>.row>.second_round.column{
+    background-color:#d1c29a!important;
+}
+
+.ui.grid>.first_round.column, .ui.grid>.first_round.row, .ui.grid>.row>.first_round.column{
+    background-color:#80a3ce!important;
+}
+
+.course.item {
+    -o-transition: .3s !important;
+    -ms-transition: .3s !important;
+    -moz-transition: .3s !important;
+    -webkit-transition: .3s !important;
+    transition: .3s !important;
+    color:rgba(255,255,255,0.9);
+}
+
+.course.item:hover {
+    color: white !important;
+    border-color: white !important;
+    cursor:pointer;
+}
+
+.ui.padding_right.divided.grid:not([class*="vertically divided"])>.row>.column{
+    box-shadow: -1px 0 0 0 rgba(255,255,255,.85);
+}
+
+.padding_right.grid{
+    padding-right:1rem;
+}
+
+.circular_segment{
+    height:150px;
+    width:150px;
+}
+
+.external_web{
+
+}
+
 .school_url{
     overflow:hidden;
     text-overflow:ellipsis;
@@ -129,6 +202,14 @@ h4.ui.news.dark_red.header{
     height: 5rem;
 }
 
+.medium.divider {
+    height: 2rem;
+}
+
+.small.divider {
+    height: 1rem;
+}
+
 .dark_red {
     color: #CC0000 !important;
 }
@@ -195,6 +276,7 @@ table.ui.person.black.table{
 }
 
 /* Override Semantic UI Element */
+
 .ui.ordered.list .list>.item:before, .ui.ordered.list>.item:before, ol.ui.list li:before{
     margin-top:0.32rem;
 }
