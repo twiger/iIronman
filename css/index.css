@@ -60,6 +60,13 @@ p.float.right{
 
 /* Semantic Element */
 
+.ui.ordered.narrow.inverted.list{
+    float:left;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: -1.2rem;
+}
+
 .course.column{
     margin-top: -0.5rem !important;
 }
@@ -106,7 +113,7 @@ p.float.right{
     -moz-transition: .3s !important;
     -webkit-transition: .3s !important;
     transition: .3s !important;
-    color:rgba(255,255,255,0.9);
+    color:rgba(255,255,255,0.9) !important;
 }
 
 .course.item:hover {
@@ -253,6 +260,10 @@ h4.ui.news.dark_red.header{
     margin-bottom: 1rem;
 }
 
+.ui.ordered.narrow.list>.item{
+    margin-bottom: 0rem;
+}
+
 .question{
     color: firebrick;
 }
@@ -279,6 +290,11 @@ table.ui.person.black.table{
 
 .ui.ordered.list .list>.item:before, .ui.ordered.list>.item:before, ol.ui.list li:before{
     margin-top:0.32rem;
+}
+
+.ui.ordered.narrow.list .list>.item:before, .ui.ordered.narrow.list>.item:before, ol.ui.narrow.list li:before{
+    margin-top: 0rem;
+    color:white;
 }
 
 .ui.bulleted.list .list>.item:before, .ui.bulleted.list>.item:before{
